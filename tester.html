@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h2 {
+  background-color: rgba(255,255,255,.1);color: orange;
+
+}
+
+h3 {
+  
+  font-size: 34.85px;color: brown;background-color:rgba(255,255,255,.4) ;padding: bottom 20px
+}
+ body  {
+  text-align: center;color:#fff;font-size: 40px;
+  background:url("/home/quirky30/Desktop/index1.jpeg"); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+    color: #fff;
+    width: 50%;
+    padding: 10px;
+    height: 50px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.navbar {
+    overflow: hidden;
+    background-color:orange;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    
+    font-size: 16px;
+    color: orange;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: orange;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: orange;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: orange;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+img {
+  height: 160px;border-radius: 180px;
+
+}
+
+form {
+  float:right;padding: bottom 40px;color: brown;
+}
+
+p {
+  float:right;color: orange;background-color: grey;
+}
+
+li {
+  color: orange;
+  display: inline;
+  padding: 50px 50px 50px 50px;
+  background-color: orange;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>Auction on Line</h2>
+
+
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+
+Select image:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    
+
+
+</form>
+<h3><strong>Anything you want to sell?-upload pic on this page &#8594;&#8594;&#8594;&#8594;</strong></h3>
+
+
+<div class="row">
+
+  <div class="column" style="background-color:rgba(255,255,255,.1">
+  <div class="dropdown">
+    <button class="dropbtn">
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/home/quirky30/Desktop/car1.jpeg">Car 1</a>
+      <a href="/home/quirky30/Desktop/car2.jpeg">Car 2</a>
+      <a href="/home/quirky30/Desktop/car3.jpeg">Car 3</a>
+    </div>
+
+    <p><strong>click-Luxary cars from R60 000</strong></p>
+  </div>
+ </div>
+
+
+ <div class="row">   
+<div class="column" style="background-color:rgba(255,255,255,.1">
+  <div class="dropdown">
+    <button class="dropbtn">
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Pic 1</a>
+      <a href="#">Pic 2</a>
+      <a href="#">Pick3</a>
+    </div>
+    <p><strong>click-Home applayances From R30</strong></p>
+  </div>
+ </div>
+
+<div class="row">
+<div class="column" style="background-color:rgba(255,255,255,.1">
+   
+  <div class="dropdown">
+    <button class="dropbtn">
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Fasion</a>
+      <a href="#">Computer</a>
+      <a href="#">Cellphone</a>
+    </div>
+    <p><strong>click-Fashion/computer/cellphone R50<strong></p>
+  
+  </div>
+
+  
+</div>
+
+<div class="row">
+<div class="column" style="background-color:rgba(255,255,255,.1">
+</div>
+    
+</div>
+<marquee scrollamount="10"
+direction="left"
+behavior="scroll">
+Welcome to Njoks Auction space...
+<img src="/home/quirky30/Desktop/car4.jpeg"><img src="/home/quirky30/Desktop/house1.jpeg"><img src="/home/quirky30/Desktop/boat1.jpeg"><img src="/home/quirky30/Desktop/jet1.jpeg"><img src="/home/quirky30/Desktop/computer.jpeg">Anything you want to sell?-upload pic on this page.
+</marquee>
+
+<lu>
+
+<li><a href="#">Email</a></li>
+<li><a href="#">Contacts</a></li>
+<li><a href="#">Clients</a></li>
+
+</lu>
+
+</body>
+</html>
